@@ -44,7 +44,7 @@ func New(storagePath string) (*Storage, error) {
 	}, nil
 }
 
-func (s *Storage) SaveUrl(urlToSave string, alias string) (int64, error) {
+func (s *Storage) SaveURL(urlToSave string, alias string) (int64, error) {
 	const op = "storage.sqlite.SaveUrl"
 
 	stmt, err := s.db.Prepare(`
